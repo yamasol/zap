@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>這是我第一個網站</title>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	
+	<script type="text/javascript">
+
+	$(function(){
+
+		$('#cbox').click(function(event) {
+			$(this).fadeOut(1000);
+		});
+
+		$('#cbox2').click(function(event) {
+			
+			$(this).css({
+				height: '100px',
+				width:  '100px'
+			});
+
+		});
+
+
+	});
+
+
+
+
+	</script>
+	
+
+
+
+	<style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.header{
+		height: 80px;
+		color: #FFF;
+		background-color: #656;
+		padding: 10px;
+	}
+	.content{
+		background-color: #eda;
+		height: 500px;
+		padding: 10px;
+	}
+	.footer{
+		padding: 20px;
+		text-align: right;
+		color: #FFF;
+		background-color: #222;
+	}
+	.box{
+		width: 400px;
+		height: 400px;
+		/*  background-color: #654;  */
+		float: left;
+		margin: 20px;
+	}
+	.box-blue{
+		background-image: url(1.jpg);
+	}
+	.box-blue:hover{
+		background-image: url(2.jpg);
+	}
+	
+	.box-red{
+		background-color: #965;
+	}
+
+	.title{
+		font-size: 50px;
+	}
+	.title:hover{
+		color: #987;
+	}
+	
+
+	
+
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<!--我是住解 -->	
+
+<div class="header">
+<h1 class="title">我是Title</h1>
+</div>
+<div class="content">
+
+	<div class="box box-blue" id="cbox">s</div>
+	<div class="box box-red" id="cbox2">s</div>
+
+</div>
+
+<div class="footer">efwioejfiwoefjoiwefjwefjiwejfiwjfjefjwioef</div>
+
+</body>
+
+</html>
